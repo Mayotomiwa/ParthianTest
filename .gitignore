@@ -7,14 +7,6 @@ node_modules/
 .expo/
 dist/
 web-build/
-index.yml
-screens/
-navigation/
-data/
-hooks/
-context/
-store/
-reducer/
 
 # Native
 *.orig.*
