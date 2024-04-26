@@ -1,0 +1,47 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: User API
+  description: An API for managing user data
+servers:
+- url: http://api.example.com/v1
+paths:
+  /user:
+    get:
+      summary: Returns the user data
+      responses:
+        '200':
+          description: A JSON object of user data
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  user:
+                    type: object
+                    properties:
+                      balance:
+                        type: integer
+                      transactionHistory:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: integer
+                            amount:
+                              type: integer
+                            type:
+                              type: string
+                            date:
+                              type: string
+                              format: date-time
+                      friends:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: integer
+                            name:
+                              type: string
