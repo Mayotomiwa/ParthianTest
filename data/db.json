@@ -1,0 +1,19 @@
+{
+    "user": {
+        "balance": 1000,
+        "transactionHistory": [
+            {
+                "id": 1,
+                "amount": 200,
+                "type": "debit",
+                "date": "2024-04-25T07:00:00Z"
+            }
+        ],
+        "friends": [
+            {
+                "id": 1,
+                "name": "John Doe"
+            }
+        ]
+    }
+}
